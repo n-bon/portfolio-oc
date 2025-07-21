@@ -16,3 +16,14 @@
 }
 
 /*** Default style ***/
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    line-height: var(--medium);
+}
+
+main {
+    max-width: 1280px;
+    margin: auto;
+}
