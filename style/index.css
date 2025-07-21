@@ -1,0 +1,70 @@
+/* General */
+* {
+    color: var(--dark);
+}
+
+.btn {
+    display: inline-block;
+    font-size: var(--regular);
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--contrast3);
+    padding: var(--small) var(--medium);
+    border-radius: var(--regular);
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: space-around;
+    justify-content: center;
+    gap: var(--xlarge);
+    background: radial-gradient(closest-side, var(--contrast2), transparent);
+}
+
+.hero-infos {
+    max-width: 50%;
+}
+
+.hero-title {
+    font-family: "Poetsen One", sans-serif;
+    font-size: var(--xlarge);
+    line-height: var(--xlarge);
+    margin-bottom: var(--large);
+}
+
+.hero-subtitle {
+    font-weight: 600;
+    font-size: var(--large);
+    margin-bottom: var(--medium);
+}
+
+.hero-commercial {
+    font-size: var(--medium);
+    margin-bottom: var(--regular);
+}
+
+.hero-action {
+    font-style: italic;
+    margin-bottom: var(--regular);
+}
+
+.hero-btn {
+    font-size: var(--medium);
+    padding: var(--regular) var(--large);
+    border-radius: var(--large);
+    box-shadow: 4px 4px 4px grey;
+}
+
+.hero-btn:hover {
+    background-color: var(--contrast2);
+}
+
+.hero-image {
+    width: 250px;
+    box-shadow: 4px 4px 4px grey;
+    border-radius: var(--small);
+}
