@@ -175,10 +175,72 @@ h3 {
 .portfolio-card-btn {
     font-weight: 400;
     margin-top: var(--small);
-    background-color: var(--contrast2);
     box-shadow: 4px 4px 4px grey;
 }
 
 .portfolio-card-btn:hover {
-    background-color: var(--contrast3);
+    background-color: var(--contrast2);
+}
+
+/* About */
+.about {
+    background: radial-gradient(closest-side, var(--contrast2), transparent);
+    margin-bottom: var(--xxxlarge);
+}
+
+.about-description {
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--large);
+}
+
+.about-description p {
+    margin-bottom: var(--small);
+}
+
+.about-curriculum {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--large);
+}
+
+.about-curriculum h3 {
+    text-align: center;
+}
+
+.about-item {
+    margin-bottom: var(--medium);
+}
+
+.about-diploma {
+    font-weight: 600;
+}
+
+.about-school {
+    font-style: italic;
+}
+.about-action {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-action p {
+    margin-bottom: var(--regular);
+}
+.btn-about {
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 4px grey;
+}
+
+.btn-about:hover {
+    background-color: var(--contrast2);
 }
