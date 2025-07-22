@@ -38,7 +38,7 @@ textarea {
 .card {
     background-color: var(--bright);
     border-radius: var(--regular);
-    box-shadow: 4px 4px 4px grey;
+    box-shadow: 8px 8px 8px grey;;
 }
 
 .contact-btn {
@@ -100,7 +100,7 @@ textarea {
 
 .hero-image {
     width: 250px;
-    box-shadow: 4px 4px 4px grey;
+    box-shadow: 8px 8px 8px grey;    
     border-radius: var(--small);
 }
 
@@ -137,7 +137,7 @@ textarea {
 
 .portfolio-card {
     overflow: hidden;
-    box-shadow: 0px 0px 12px grey;
+    box-shadow: 0px 0px 16px grey;
     max-width: 50%;
 }
 
@@ -301,7 +301,7 @@ textarea {
 .local {
     display: flex;
     flex-direction: row;
-    gap: var(--large);
+    gap: var(--xlarge);
     align-items: center;
     justify-items: space-around;
     justify-content: center;
@@ -320,10 +320,11 @@ textarea {
 .local-infos p {
     margin-bottom: var(--small);
 }
+
 .local-image {
     width: 250px;
     height: 200px;
     position: top;
-    box-shadow: 4px 4px 4px grey;
+    box-shadow: 8px 8px 8px grey;
     border-radius: var(--small);
 }
