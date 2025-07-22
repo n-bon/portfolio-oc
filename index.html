@@ -6,20 +6,34 @@
     <title>Développeur web à Nice - Nathan Bonin</title>
     <meta name="description" content="Mon portfolio. Je créée et développe des solutions sur-mesure pour faire des internautes vos clients">
     <meta name="robots" content="index, follow">
+    <!--Loading fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap" rel="stylesheet">
+    <!--Loading icons-->
+    <script src="https://kit.fontawesome.com/43fc7e11e0.js" crossorigin="anonymous"></script>
+    <!--Stylesheets below-->
+    <link href="./style/reset.css" rel="stylesheet" />
+    <link href="./style/style.css" rel="stylesheet" />
+    <link href="./style/header.css" rel="stylesheet" />
+    <link href="./style/index.css" rel="stylesheet" />
+    <link href="./style/footer.css" rel="stylesheet" />    
 </head>
 <body>
-    <header class="menu">
-        <img class="menu-logo" alt="Logo de Nathan Bonin, développeur web à Nice" src="./logo/logo-color.svg">
-        <nav>
-            <ul class="menu-nav">
-                <li><a href="">Services</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">À propos</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="menu">
+            <img class="menu-logo" alt="Logo de Nathan Bonin, développeur web à Nice" src="./logo/logo-color.svg">
+            <nav>
+                <ul class="menu-nav">
+                    <li><a href="" class="menu-link">Services</a></li>
+                    <li><a href="" class="menu-link">Portfolio</a></li>
+                    <li><a href="" class="menu-link">À propos</a></li>
+                    <li><a href="" class="menu-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="homepage">
+    <main>
         <section class="hero">
             <img class="hero-image" src="./images/portrait-nathan-bonin.webp" alt="Portrait de Nathan Bonin, développeur web à Nice">
             <div class="hero-infos">
@@ -28,23 +42,29 @@
                 <p class="hero-commercial">Création de solutions digitales sur mesure pour transformer vos visiteurs en clients</p>
                 <p class="hero-commercial">Vous avez un projet digital ?</p>
                 <p class="hero-action">Discutons-en dès maintenant</p>
-                <a class="btn hero-btn" href="" title="Contacter Nathan Bonin">Me contacter</a>
+                <a class="btn hero-btn contact-btn" href="" title="Contacter Nathan Bonin">Me contacter</a>
             </div>
         </section>
         <section class="services">
             <h2>Des expertises au service de votre performance digitale</h2>
             <div class="services-list">
                 <article class="card services-card">
+                    <i class="fa-brands fa-hubspot services-icon"></i>
                     <h3>Déploiement de CRM HubSpot</h3>
-                    <p>Optimisez votre cycle de vente avec une intégration sur mesure de HubSpot. De la configuration initiale à la création de workflows automatisés, bénéficiez d’un accompagnement complet pour structurer votre gestion de la relation client, centraliser vos données et augmenter la productivité de vos équipes commerciales.</p>
+                    <p>Optimisez votre cycle de vente avec une intégration sur mesure de HubSpot.</p> 
+                    <p>Bénéficiez d’un accompagnement complet pour structurer votre gestion de la relation client, centraliser vos données et augmenter la productivité de vos équipes commerciales.</p>
                 </article>
                 <article class="card services-card">
+                    <i class="fa-solid fa-envelope services-icon"></i> 
                     <h3>Landing pages et formulaires personnalisés</h3>
-                    <p>Maximisez la conversion de vos campagnes SEA, réseaux sociaux et e-mailings grâce à des pages d’atterrissage rapides, responsive et conçues pour convertir. Formulaires dynamiques, questionnaires interactifs et tracking événementiel intégrés pour capturer les leads les plus qualifiés.</p>
+                    <p>Maximisez la conversion de vos campagnes SEA, réseaux sociaux et e-mailings grâce à des pages d’atterrissage conçues pour convertir.</p> 
+                    <p>Formulaires dynamiques, questionnaires interactifs et tracking événementiel intégrés pour capturer les leads les plus qualifiés.</p>
                 </article>
                 <article class="card services-card">
+                    <i class="fa-solid fa-display services-icon"></i>
                     <h3>Sites vitrines pour PME</h3>
-                    <p>Offrez à votre entreprise une présence digitale professionnelle et performante. Chaque site vitrine est conçu sur mesure, avec un design moderne, une structure SEO-friendly et une prise en main facile pour vous permettre de mettre à jour vos contenus en toute autonomie.</p>
+                    <p>Offrez à votre entreprise une présence digitale professionnelle et performante. </p>
+                    <p>Chaque site vitrine est conçu sur mesure, avec un design moderne, une structure SEO-friendly et une prise en main facile pour vous permettre de mettre à jour vos contenus en toute autonomie.</p>
                 </article>                
             </div>
         </section>
@@ -52,106 +72,123 @@
             <h2>Derniers projets</h2>
             <div class="portfolio-list">
                 <article class="card portfolio-card">
-                    <figure class="portolio-card-screenshot">
+                    <figure class="portfolio-card-screenshot">
                         <img alt="Capture d'écran d'un projet d'intégration de prototype en HTML & CSS" src="./images/site-hebergement.webp">
                     </figure>
                     <div class="portfolio-card-content">
                         <h3>Prototype d’un site de réservation d’hébergements</h3>
-                        <div class="taglist">
-                            <span>HTML</span><span>CSS</span>
-                        </div>
-                        <p>Projet réalisé dans le cadre de la création d’une nouvelle plateforme de réservation d’hébergements et d’activités. Développement d’un prototype de page d’accueil, conformément à une maquette  fournie par une agence de design. Dans ce projet, les éléments sont intégrés en prenant en compte le responsive : les composants s’adaptent à la largeur de l’écran.</p>
-                        <a class="btn portfolio-card-btn" target="_blank" href="" title="Ouvrir le projet dans un nouvel onglet">Voir le projet</a>
+                        <ul class="taglist">
+                            <li>HTML</li><li>CSS</li>
+                        </ul>
+                        <p>Projet réalisé dans le cadre de la création d’une nouvelle plateforme de réservation d’hébergements et d’activités.</p> 
+                        <p>Développement d’un prototype de page d’accueil, conformément à une maquette  fournie par une agence de design.</p>
+                        <p>Dans ce projet, les éléments sont intégrés en prenant en compte le responsive : les composants s’adaptent à la largeur de l’écran.</p>
+                        <a class="btn portfolio-card-btn" target="_blank" href="" title="Ouvrir le projet dans un nouvel onglet">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square new-tab"></i></a>
                     </div>
                 </article>
                 <article class="card portfolio-card">
-                    <figure class="portolio-card-screenshot">
+                    <figure class="portfolio-card-screenshot">
                         <img alt="Capture d'écran d'un site interactif développé avec javascript" src="./images/site-architecte.webp">
                     </figure>
                     <div class="portfolio-card-content">
                         <h3>Site interactif pour une architecte</h3>
-                        <div class="taglist">
-                            <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>API</span>
-                        </div>
-                        <p>Développement du frontend d’un portfolio interactif avec back-office sur mesure pour la gestion autonome des projets. L’interface comprend un formulaire réservé aux collaborateurs de l’architecte leur permettant d’ajouter des projets en toute autonomie. Ce projet a nécessité des connexions au backend du site via des API.</p>
-                        <a class="btn portfolio-card-btn" target="_blank" href="" title="Ouvrir le projet dans un nouvel onglet">Voir le projet</a>
+                        <ul class="taglist">
+                            <li>HTML</li><li>CSS</li><li>JAVASCRIPT</li><li>API</li>
+                        </ul>
+                        <p>Développement du frontend d’un portfolio interactif avec back-office sur mesure pour la gestion autonome des projets. </p>
+                        <p>L’interface comprend un formulaire réservé aux collaborateurs de l’architecte leur permettant d’ajouter des projets en toute autonomie.</p>
+                        <p>Ce projet a nécessité des connexions au backend du site via des API.</p>
+                        <a class="btn portfolio-card-btn" target="_blank" href="" title="Ouvrir le projet dans un nouvel onglet">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square new-tab"></i></a>
                     </div>
                 </article>
                 <article class="card portfolio-card">
-                    <figure class="portolio-card-screenshot">
+                    <figure class="portfolio-card-screenshot">
                         <img alt="Capture d'écran d'un projet d'optimisation du SEO et de l'accessibilité" src="./images/site-photographe.webp">
                     </figure>
                     <div class="portfolio-card-content">
                         <h3>Refonte SEO & accessibilité d’un site de photographe</h3>
-                        <div class="taglist">
-                            <span>SEO</span><span>ACCESSIBILITÉ NUMÉRIQUE</span><span>GREENCODE</span>
-                        </div>
-                        <p>Audit complet, optimisation technique (balises, performances, structure HTML),mise en conformité avec les normes WCAG (Recommandations d’accessibilité pour les contenus web) pour améliorer l’accessibilité et optimisations pour le référencement naturel (SEO). Des mesures pour rendre le site plus respectueux de l’environnement ont été prises comme le formatage des images et la minification des fichiers.</p>
-                        <a class="btn portfolio-card-btn" target="_blank" href="" title="Ouvrir le projet dans un nouvel onglet">Voir le projet</a>
+                        <ul class="taglist">
+                            <li>SEO</li><li>ACCESSIBILITÉ NUMÉRIQUE</li><li>GREENCODE</li>
+                        </ul>
+                        <p>Audit complet, optimisation technique (balises, performances, structure HTML),mise en conformité avec les normes WCAG (Recommandations d’accessibilité pour les contenus web) pour améliorer l’accessibilité et optimisations pour le référencement naturel (SEO). </p>
+                        <p>Des mesures pour rendre le site plus respectueux de l’environnement ont été prises comme le formatage des images et la minification des fichiers.</p>
+                        <a class="btn portfolio-card-btn" target="_blank" href="" title="Ouvrir le projet dans un nouvel onglet">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square new-tab"></i></a>
                     </div>
                 </article>                                  
             </div>
         </section>
         <section class="about">
             <h2>Votre prestataire en développement web à Nice</h2>
-            <p class="about-description">Ancien responsable web marketing, aujourd’hui développeur web à Nice, j’allie expertise technique et vision stratégique pour concevoir des solutions digitales centrées sur la performance.</p>
-            <p class="about-description">Grâce à une solide expérience en acquisition de clients et en gestion de projets, je suis en mesure de vous accompagner sur l’ensemble du cycle de production, de la réflexion initiale à la mise en ligne.</p>
+            <div class="about-description">
+                <p>Ancien responsable web marketing, aujourd’hui développeur web à Nice, j’allie expertise technique et vision stratégique pour concevoir des solutions digitales centrées sur la performance.</p>
+                <p>Grâce à une solide expérience en acquisition de clients et en gestion de projets, je suis en mesure de vous accompagner sur l’ensemble du cycle de production, de la réflexion initiale à la mise en ligne.</p>
+            </div>
             <div class="about-curriculum">
                 <h3>Diplômes</h3>
                 <div class="about-item">
+                    <i class="fa-solid fa-sitemap about-icon"></i>
                     <div>
-                        <p class="about-diploma">Expert en Management des Systèmes d’Information</p>
+                        <p class="about-diploma">Expert en management des systèmes d’information</p>
                         <p class="about-school">En préparation, Epitech</p>                        
                     </div>
                 </div>
                 <div class="about-item">
+                    <i class="fa-solid fa-code about-icon"></i>
                     <div>
-                        <p class="about-diploma">Développeur Web</p>
+                        <p class="about-diploma">Développeur web</p>
                         <p class="about-school">2025, Open Classrooms</p>                        
                     </div>
                 </div>
                 <div class="about-item">
+                    <i class="fa-solid fa-shop about-icon"></i>
                     <div>
-                        <p class="about-diploma">Marketing et Communication Digitale</p>
+                        <p class="about-diploma">Marketing et communication digitale</p>
                         <p class="about-school">2019, École W</p>
                     </div>
                 </div>
                 <div class="about-item">
+                    <i class="fa-solid fa-bullhorn about-icon"></i>
                     <div>
-                        <p class="about-diploma">Communication et Relations Presse</p>
+                        <p class="about-diploma">Communication et relations presse</p>
                         <p class="about-school">2019, École W</p>                        
                     </div>
                 </div>
+ 
             </div>
-            <p class="about-action">Pour en savoir plus sur mon parcours et suivre mes actualités professionnelles, abonnez-vous à mon profil Linkedin :</p>
-            <a class="btn btn-about" target="_blank" href="" title="Ouvrir le profil Linkedin de Nathan Bonin">Voir mon profil Linkedin</a>
+            <div class="about-action">
+                <p>Pour en savoir plus sur mon parcours et suivre mes actualités professionnelles, abonnez-vous à mon profil Linkedin :</p>
+                <a class="btn btn-about" target="_blank" href="" title="Ouvrir le profil Linkedin de Nathan Bonin">Voir mon profil Linkedin <i class="fa-solid fa-arrow-up-right-from-square new-tab new-tab"></i></a>                 
+            </div>                    
         </section>
         <section class="contact">
             <h2>Contactez-moi</h2>
-            <form method="post" id="contactForm" action="">
+            <form method="post" id="contactForm" action="" class="card contact-card">
                 <label for="name">Votre nom</label>
-                <input type="text" id="name" placeholder="Écrivez votre nom ici" required="true">
+                <input class="contact-input" type="text" id="name" placeholder="Écrivez votre nom ici" required="true">
                 <label for="email">Votre adresse e-mail</label>
-                <input type="email" id="email" placeholder="Écrivez votre adresse mail ici" required="true">
+                <input class="contact-input" type="email" id="email" placeholder="Écrivez votre adresse mail ici" required="true">
                 <label for="tel">Votre numéro de téléphone</label>
-                <input type="tel" id="tel" placeholder="Écrivez votre numéro ici" required="true">
+                <input class="contact-input" type="tel" id="tel" placeholder="Écrivez votre numéro ici" required="true">
                 <label for="message">Votre message</label>
-                <textarea id="message">Écrivez votre message ici</textarea>
-                <input type="submit" value="Envoyer le message">
+                <textarea class="contact-input" id="message">Écrivez votre message ici</textarea>
+                <input class="btn btn-form" type="submit" value="Envoyer le message">
             </form>
         </section>
         <section class="local">
             <img class="local-image" src="./images/ecosysteme-nice.webp" alt="Ecosystème tech à Nice">
             <div class="local-infos">
-                <h2>Travailler avec un développeur web à Nice : un atout stratégique</h2>
+                <h2>Travailler avec un développeur web à Nice : un atout stratégique</h2>
                 <p>Nice s’impose aujourd’hui comme un pôle dynamique dans le secteur numérique. Avec la présence d’incubateurs innovants, d’événements tech réguliers et un tissu économique en pleine croissance, l’écosystème niçois favorise l’émergence de projets digitaux à fort impact.</p>
-                <p>Faire appel à un développeur web à Nice, c’est bénéficier d’une proximité géographique, d’une réactivité optimale, et d’un réseau local solide. C’est aussi choisir un prestataire qui comprend les enjeux spécifiques des entreprises régionales, de la la petite entreprise artisanale à la PME en pleine croissance.</p>
+                <p>Faire appel à un développeur web à Nice, c’est bénéficier d’une proximité géographique, d’une réactivité optimale, et d’un réseau local solide. </p>
+                <p>C’est aussi choisir un prestataire qui comprend les enjeux spécifiques des entreprises régionales, de la la petite entreprise artisanale à la PME en pleine croissance.</p>
             </div>
         </section>
     </main>
-    <footer class="credits">
-        <img class="menu-logo" alt="Logo de Nathan Bonin, développeur web à Nice" src="./logo/logo-grey.svg">
-        <p class="credits-text">Nathan Bonin, tous droits réservés</p>
+    <footer>
+        <div class="credits">
+            <img class="credits-logo" alt="Logo de Nathan Bonin, développeur web à Nice" src="./logo/logo-grey.svg">
+            <p class="credits-text">Nathan Bonin, tous droits réservés</p>            
+        </div>
     </footer>
 </body>
 </html>

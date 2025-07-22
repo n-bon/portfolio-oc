@@ -1,0 +1,350 @@
+
+/*** Main ****/
+main {
+    max-width: 1280px;
+    margin: auto;
+}
+
+h2 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: var(--large);
+    text-align: center;
+    margin-bottom: var(--xlarge);
+}
+
+h3 {
+    font-size: var(--medium);
+    font-weight: 600;
+    margin-bottom: var(--regular);
+}
+
+input,
+textarea {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--regular);
+    color: var(--dark);
+}
+.btn {
+    display: inline-block;
+    font-size: var(--regular);
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--contrast3);
+    padding: var(--small) var(--medium);
+    border: none;
+    border-radius: var(--large);
+}
+
+.card {
+    background-color: var(--bright);
+    border-radius: var(--regular);
+    box-shadow: 8px 8px 8px grey;;
+}
+
+.contact-btn {
+    background-color: var(--contrast1);
+    color: var(--bright);
+}
+
+.contact-btn:hover {
+    background-color: var(--contrast3);
+    color: var(--dark);
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: space-around;
+    justify-content: center;
+    gap: var(--xlarge);
+    background: radial-gradient(closest-side, var(--contrast2), transparent);
+}
+
+.hero-infos {
+    max-width: 50%;
+}
+
+.hero-title {
+    font-family: "Poetsen One", sans-serif;
+    font-size: var(--xlarge);
+    line-height: var(--xlarge);
+    margin-bottom: var(--large);
+}
+
+.hero-subtitle {
+    font-weight: 600;
+    font-size: var(--large);
+    margin-bottom: var(--medium);
+}
+
+.hero-commercial {
+    font-size: var(--medium);
+    margin-bottom: var(--regular);
+}
+
+.hero-action {
+    font-style: italic;
+    margin-bottom: var(--regular);
+}
+
+.hero-btn {
+    font-size: var(--medium);
+    padding: var(--regular) var(--large);
+    border-radius: var(--large);
+    box-shadow: 4px 4px 4px grey;
+}
+
+
+.hero-image {
+    width: 250px;
+    box-shadow: 8px 8px 8px grey;    
+    border-radius: var(--small);
+}
+
+/* Services */
+
+.services-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: var(--xxxlarge);
+    gap: var(--large);
+    justify-content: space-around;
+}
+
+.services-card {
+    padding: var(--large);
+    width: 25%;
+}
+
+.services-icon {
+    font-size: var(--large);
+    margin-bottom: var(--regular);
+    color: var(--contrast1);
+}
+
+.services-card p {
+    margin-bottom: var(--small);
+}
+
+/* Portfolio */
+
+.portfolio-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--large);
+    background: radial-gradient(closest-side, var(--contrast3), transparent);
+    margin-bottom: var(--xxxlarge);
+}
+
+.portfolio-card {
+    overflow: hidden;
+    box-shadow: 0px 0px 16px grey;
+    max-width: 50%;
+}
+
+.portfolio-card-screenshot {
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: var(--regular) var(--regular) 0 0;
+    box-shadow:  0px 4px 8px grey;
+}
+
+.portfolio-card-screenshot img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-card-content {
+    margin: var(--large);
+}
+
+.taglist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--regular);
+    margin-bottom: var(--regular);
+}
+
+.taglist li {
+    font-weight: 600;
+    font-size: small;
+    background-color: var(--dark);
+    color: var(--bright);
+    border-radius: var(--large) var(--regular) var(--regular) var(--large);
+    padding: 0.25rem 0.5rem 0.25rem var(--regular);
+    box-shadow: 4px 4px 4px grey;
+}
+
+.portfolio-card-content p {
+    margin-bottom: var(--small);
+}
+
+.new-tab {
+    font-size: var(--smaller);
+    padding-left: var(--small);
+}
+
+.portfolio-card-btn {
+    font-weight: 400;
+    margin-top: var(--small);
+    box-shadow: 4px 4px 4px grey;
+}
+
+.portfolio-card-btn:hover {
+    background-color: var(--contrast2);
+}
+
+/* About */
+.about {
+    background: radial-gradient(closest-side, var(--contrast2), transparent);
+    margin-bottom: var(--xxxlarge);
+}
+
+.about-description {
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--large);
+}
+
+.about-description p {
+    margin-bottom: var(--small);
+}
+
+.about-curriculum {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--large);
+    text-align: center;
+}
+
+.about-curriculum h3 {
+    text-align: center;
+}
+
+.about-item {
+    margin-bottom: var(--medium);
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--medium);
+}
+
+.about-icon {
+    color: var(--contrast1);
+    font-size: var(--large);
+}
+.about-diploma {
+    font-weight: 600;
+}
+
+.about-school {
+    font-style: italic;
+}
+.about-action {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-action p {
+    margin-bottom: var(--regular);
+}
+.btn-about {
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 4px grey;
+}
+
+.btn-about:hover {
+    background-color: var(--contrast2);
+}
+
+/* Contact */
+
+.contact {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--xxxlarge);
+}
+
+.contact-card {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: var(--large);
+}
+
+.contact label {
+    display: block;
+    margin-bottom: var(--small);
+}
+
+.contact-input {
+    box-sizing: border-box;
+    margin-bottom: var(--medium);
+    width: 100%;
+    background: white;
+    border-radius: var(--large);
+    border: 1px solid var(--dark);
+    padding: var(--small) var(--regular);
+}
+
+.btn-form {
+    padding: var(--small) var(--medium);
+    box-shadow: 4px 4px 4px grey;
+}
+
+.btn-form:hover {
+    background-color: var(--contrast2);
+}
+
+/* Local */
+
+.local {
+    display: flex;
+    flex-direction: row;
+    gap: var(--xlarge);
+    align-items: center;
+    justify-items: space-around;
+    justify-content: center;
+    margin-bottom: var(--xxxlarge);
+}
+
+.local-infos {
+    max-width: 50%;
+}
+.local-infos h2 {
+    text-align: left;
+    line-height: var(--large);
+    margin-bottom: var(--large);
+}
+
+.local-infos p {
+    margin-bottom: var(--small);
+}
+
+.local-image {
+    width: 250px;
+    height: 200px;
+    position: top;
+    box-shadow: 8px 8px 8px grey;
+    border-radius: var(--small);
+}

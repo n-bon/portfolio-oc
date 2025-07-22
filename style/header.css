@@ -1,0 +1,56 @@
+header {
+    background-color: var(--bright);
+    box-shadow: 0px 8px 8px grey;
+}
+
+.menu {
+    max-width: 1280px;
+    margin: auto;
+    padding: var(--regular);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-logo {
+    max-width: 150px;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--regular);
+}
+
+.menu-nav a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: var(--small) var(--regular);
+    border-radius: var(--regular);
+    box-shadow: 4px 4px 4px grey;
+    padding: var(--small) var(--regular);
+
+}
+
+.menu-link {
+    color: var(--dark);
+    background-color: var(--contrast3);
+}
+
+
+.menu-link:hover {
+    background-color: var(--contrast2);
+}
+
+.menu-contact {
+    background-color: var(--contrast1);
+    color: var(--bright);
+}
+
+.menu-contact:hover {
+    background-color: var(--contrast3);
+    color: var(--dark);
+}
+

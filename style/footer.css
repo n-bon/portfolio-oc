@@ -1,0 +1,23 @@
+footer {
+    background-color: var(--bright);
+        box-shadow: 0px -8px 8px grey;
+}
+
+.credits {
+    max-width: 1280px;
+    margin: auto;
+    padding: var(--regular);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.credits-logo {
+    max-width: 100px;
+}
+
+.credits-text {
+    font-size: var(--smaller);
+}
+
