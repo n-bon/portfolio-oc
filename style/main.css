@@ -51,6 +51,20 @@ textarea {
     color: var(--dark);
 }
 
+@media screen and (max-width: 998px) {
+    main {
+        padding: 0 var(--large);
+    }
+
+    h2 {
+    font-size: var(--medium);
+   } 
+
+   h3 {
+    font-size: var(--regular);
+   }
+}
+
 /* Hero */
 .hero {
     min-height: 100vh;
@@ -104,6 +118,40 @@ textarea {
     border-radius: var(--small);
 }
 
+@media screen and (max-width: 998px) {
+    .hero-title {
+    font-size: var(--large);
+    line-height: var(--large);
+    margin-bottom: var(--medium);
+    }
+
+    .hero-subtitle {
+        font-size: var(--medium);
+        margin-bottom: var(--regular);
+    }
+
+    .hero-commercial {
+        font-size: var(--regular);
+        margin-bottom: var(--regular);
+    }
+
+    .hero-btn {
+    font-size: var(--regular);
+    padding: var(--small) var(--regular);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .hero-infos {
+    max-width: 100%;
+    }
+}
+
 /* Services */
 
 .services-list {
@@ -128,6 +176,20 @@ textarea {
 
 .services-card p {
     margin-bottom: var(--small);
+}
+
+@media screen and (max-width: 998px) {
+    .services-list {
+    flex-direction: column;
+    margin-bottom: var(--large);
+    gap: var(--medium);
+    box-sizing: border-box;
+    }
+
+    .services-card {
+    width: 100%;
+    box-sizing: border-box;
+    }
 }
 
 /* Portfolio */
