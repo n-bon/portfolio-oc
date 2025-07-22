@@ -15,6 +15,13 @@ h3 {
     font-weight: 600;
     margin-bottom: var(--regular);
 }
+
+input,
+textarea {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--regular);
+    color: var(--dark);
+}
 .btn {
     display: inline-block;
     font-size: var(--regular);
@@ -22,6 +29,7 @@ h3 {
     text-decoration: none;
     background-color: var(--contrast3);
     padding: var(--small) var(--medium);
+    border: none;
     border-radius: var(--large);
 }
 
@@ -205,6 +213,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: var(--large);
+    text-align: center;
 }
 
 .about-curriculum h3 {
@@ -242,5 +251,44 @@ h3 {
 }
 
 .btn-about:hover {
+    background-color: var(--contrast2);
+}
+
+/* Contact */
+
+.contact {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--xxxlarge);
+}
+
+.contact-card {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: var(--large);
+}
+
+.contact label {
+    display: block;
+    margin-bottom: var(--small);
+}
+
+.contact-input {
+    box-sizing: border-box;
+    margin-bottom: var(--medium);
+    width: 100%;
+    background: white;
+    border-radius: var(--large);
+    border: 1px solid var(--dark);
+    padding: var(--small) var(--regular);
+}
+
+.btn-form {
+    box-shadow: 4px 4px 4px grey;
+}
+
+.btn-form:hover {
     background-color: var(--contrast2);
 }
