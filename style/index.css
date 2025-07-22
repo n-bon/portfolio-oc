@@ -1,6 +1,8 @@
-/* General */
-* {
-    color: var(--dark);
+
+/*** Main ****/
+main {
+    max-width: 1280px;
+    margin: auto;
 }
 
 h2 {
@@ -286,9 +288,42 @@ textarea {
 }
 
 .btn-form {
+    padding: var(--small) var(--medium);
     box-shadow: 4px 4px 4px grey;
 }
 
 .btn-form:hover {
     background-color: var(--contrast2);
+}
+
+/* Local */
+
+.local {
+    display: flex;
+    flex-direction: row;
+    gap: var(--large);
+    align-items: center;
+    justify-items: space-around;
+    justify-content: center;
+    margin-bottom: var(--xxxlarge);
+}
+
+.local-infos {
+    max-width: 50%;
+}
+.local-infos h2 {
+    text-align: left;
+    line-height: var(--large);
+    margin-bottom: var(--large);
+}
+
+.local-infos p {
+    margin-bottom: var(--small);
+}
+.local-image {
+    width: 250px;
+    height: 200px;
+    position: top;
+    box-shadow: 4px 4px 4px grey;
+    border-radius: var(--small);
 }
