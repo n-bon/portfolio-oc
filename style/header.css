@@ -26,15 +26,31 @@ header {
 
 .menu-nav a {
     text-decoration: none;
-    color: var(--dark);
     font-weight: 600;
     padding: var(--small) var(--regular);
     border-radius: var(--regular);
-    background-color: var(--contrast3);
     box-shadow: 4px 4px 4px grey;
+    padding: var(--small) var(--regular);
+
+}
+
+.menu-link {
+    color: var(--dark);
+    background-color: var(--contrast3);
 }
 
 
-.menu-nav a:hover {
+.menu-link:hover {
     background-color: var(--contrast2);
 }
+
+.menu-contact {
+    background-color: var(--contrast1);
+    color: var(--bright);
+}
+
+.menu-contact:hover {
+    background-color: var(--contrast3);
+    color: var(--dark);
+}
+

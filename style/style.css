@@ -8,6 +8,8 @@
     --contrast2: #83c5be;
     --contrast3: #ffee93;
     /* Sizes */
+    --xxxlarge: 8rem;
+    --xxlarge: 5rem;
     --xlarge: 3rem;
     --large: 2rem;
     --medium: 1.5rem;
