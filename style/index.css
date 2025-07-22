@@ -120,6 +120,12 @@ textarea {
     width: 25%;
 }
 
+.services-icon {
+    font-size: var(--large);
+    margin-bottom: var(--regular);
+    color: var(--contrast1);
+}
+
 .services-card p {
     margin-bottom: var(--small);
 }
@@ -182,6 +188,11 @@ textarea {
     margin-bottom: var(--small);
 }
 
+.new-tab {
+    font-size: var(--smaller);
+    padding-left: var(--small);
+}
+
 .portfolio-card-btn {
     font-weight: 400;
     margin-top: var(--small);
@@ -211,7 +222,7 @@ textarea {
 }
 
 .about-curriculum {
-    width: 30%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: var(--large);
@@ -224,8 +235,17 @@ textarea {
 
 .about-item {
     margin-bottom: var(--medium);
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--medium);
 }
 
+.about-icon {
+    color: var(--contrast1);
+    font-size: var(--large);
+}
 .about-diploma {
     font-weight: 600;
 }

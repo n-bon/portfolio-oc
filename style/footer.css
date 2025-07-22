@@ -18,6 +18,6 @@ footer {
 }
 
 .credits-text {
-    font-size: 0.8rem;
+    font-size: var(--smaller);
 }
 
