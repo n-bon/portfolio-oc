@@ -57,12 +57,20 @@ textarea {
     }
 
     h2 {
-    font-size: var(--medium);
-   } 
+        font-size: var(--medium);
+        margin-bottom: var(--medium);
+    } 
 
    h3 {
-    font-size: var(--regular);
-   }
+        font-size: var(--regular);
+        margin-bottom: var(--smaller);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0 var(--regular);
+    }    
 }
 
 /* Hero */
@@ -206,7 +214,7 @@ textarea {
 .portfolio-card {
     overflow: hidden;
     box-shadow: 0px 0px 16px grey;
-    max-width: 50%;
+    width: 50%;
 }
 
 .portfolio-card-screenshot {
@@ -263,6 +271,21 @@ textarea {
 
 .portfolio-card-btn:hover {
     background-color: var(--contrast2);
+}
+
+@media screen and (max-width: 998px) {
+    .portfolio-list {
+        margin-bottom: var(--large);
+    }
+    .portfolio-card {
+        width: 100%;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-card-screenshot {
+        height: 15rem;
+    }
 }
 
 /* About */
@@ -338,6 +361,30 @@ textarea {
     background-color: var(--contrast2);
 }
 
+@media screen and (max-width: 998px) {
+    .about {
+        margin-bottom: var(--large);
+    }
+
+    .about-curriculum {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-description {
+        width: 100%;
+    } 
+
+    .about-curriculum {
+        width: 80%;
+    }
+
+    .about-action {
+        width: 100%;
+    }
+}
+
 /* Contact */
 
 .contact {
@@ -378,6 +425,19 @@ textarea {
     background-color: var(--contrast2);
 }
 
+@media screen and (max-width: 998px) {
+    .contact {
+        width: 80%;
+        margin-bottom: var(--large);
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        width: 100%;
+    }      
+}
+
 /* Local */
 
 .local {
@@ -391,8 +451,9 @@ textarea {
 }
 
 .local-infos {
-    max-width: 50%;
+    width: 50%;
 }
+
 .local-infos h2 {
     text-align: left;
     line-height: var(--large);
@@ -409,4 +470,18 @@ textarea {
     position: top;
     box-shadow: 8px 8px 8px grey;
     border-radius: var(--small);
+}
+
+@media screen and (max-width: 998px) {
+    .local {
+        flex-direction: column-reverse;
+        gap: var(--regular);
+        align-items: flex-start;
+        margin-bottom: var(--large);     
+    }
+
+    .local-infos {
+        width: 100%;
+    }
+
 }
