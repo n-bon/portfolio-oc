@@ -38,7 +38,6 @@ textarea {
 .card {
     background-color: var(--bright);
     border-radius: var(--regular);
-    box-shadow: 8px 8px 8px grey;;
 }
 
 .contact-btn {
@@ -116,13 +115,11 @@ textarea {
     font-size: var(--medium);
     padding: var(--regular) var(--large);
     border-radius: var(--large);
-    box-shadow: 4px 4px 4px grey;
 }
 
 
 .hero-image {
-    width: 250px;
-    box-shadow: 8px 8px 8px grey;    
+    width: 250px;  
     border-radius: var(--small);
 }
 
@@ -213,7 +210,6 @@ textarea {
 
 .portfolio-card {
     overflow: hidden;
-    box-shadow: 0px 0px 16px grey;
     width: 50%;
 }
 
@@ -222,7 +218,7 @@ textarea {
     height: 25rem;
     overflow: hidden;
     border-radius: var(--regular) var(--regular) 0 0;
-    box-shadow:  0px 4px 8px grey;
+    box-sizing: border-box;
 }
 
 .portfolio-card-screenshot img {
@@ -230,6 +226,9 @@ textarea {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: 1px solid var(--bright);
+    border-radius: var(--regular) var(--regular) 0 0;
+    box-sizing: border-box;
 }
 
 .portfolio-card-content {
@@ -251,7 +250,6 @@ textarea {
     color: var(--bright);
     border-radius: var(--large) var(--regular) var(--regular) var(--large);
     padding: 0.25rem 0.5rem 0.25rem var(--regular);
-    box-shadow: 4px 4px 4px grey;
 }
 
 .portfolio-card-content p {
@@ -266,7 +264,6 @@ textarea {
 .portfolio-card-btn {
     font-weight: 400;
     margin-top: var(--small);
-    box-shadow: 4px 4px 4px grey;
 }
 
 .portfolio-card-btn:hover {
@@ -354,7 +351,6 @@ textarea {
     font-weight: 400;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 4px 4px 4px grey;
 }
 
 .btn-about:hover {
@@ -418,7 +414,6 @@ textarea {
 
 .btn-form {
     padding: var(--small) var(--medium);
-    box-shadow: 4px 4px 4px grey;
 }
 
 .btn-form:hover {
@@ -468,7 +463,6 @@ textarea {
     width: 250px;
     height: 200px;
     position: top;
-    box-shadow: 8px 8px 8px grey;
     border-radius: var(--small);
 }
 
