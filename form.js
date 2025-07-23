@@ -41,16 +41,25 @@ document.addEventListener("DOMContentLoaded", function () {
             body: JSON.stringify(data)
         })
         .then(response => {
+            const formOutputPlace = document.getElementById("contactForm");
+            let outputMsg = document.createElement("p");
             if (response.ok) {
-                alert("Votre message a bien été envoyé. Merci !");
                 form.reset();
+                outputMsg.className = "contact-output contact-output__success";
+                outputMsg.textContent = "Votre message a bien été envoyé. Merci, et à bientôt.";
             } else {
-                alert("Une erreur s'est produite. Veuillez réessayer.");
+                outputMsg.className = "contact-output contact-output__error";
+                outputMsg.textContent = "Il y a un problème. Veuillez recommencer.";
             }
+            formOutputPlace.appendChild(outputMsg);
         })
         .catch(error => {
             console.error("Erreur d’envoi :", error);
-            alert("Une erreur s'est produite. Veuillez réessayer.");
+            const formOutputPlace = document.getElementById("contactForm");
+            let errorMsg = document.createElement("p");
+            errorMsg.className = "contact-output contact-output__error";
+            errorMsg.textContent = "Connexion impossible. Recommencez plus tard.";
+            formOutputPlace.appendChild(errorMsg);
         });
     });
 });

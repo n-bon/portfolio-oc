@@ -420,6 +420,20 @@ textarea {
     background-color: var(--contrast2);
 }
 
+.contact-output {
+    margin-top: var(--medium);
+    border-radius: var(--medium);
+    padding: var(--large) var(--medium);
+}
+
+.contact-output__success {
+    background-color: var(--contrast2);
+}
+
+.contact-output__error {
+    background-color: var(--contrast1);
+}
+
 @media screen and (max-width: 998px) {
     .contact {
         width: 80%;
