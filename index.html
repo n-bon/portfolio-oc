@@ -29,6 +29,8 @@
     <link rel="icon" type="image/svg+xml" href="./logo/favicon.svg">
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/47924965.js"></script>
+    <!-- Form connexion to API-->
+     <script type="text/javascript" src="form.js" defer></script>
 </head>
 <body>
     <header>
@@ -174,14 +176,16 @@
         <section class="contact" id="contact">
             <h2>Contactez-moi</h2>
             <form method="post" id="contactForm" action="" class="card contact-card">
-                <label for="name">Votre nom</label>
-                <input class="contact-input" type="text" id="name" placeholder="Écrivez votre nom ici" required="true">
+                <label for="firstname">Votre prénom</label>
+                <input class="contact-input" type="text" id="firstname" name="firstname" placeholder="Marie" required="true">                
+                <label for="lastname">Votre nom</label>
+                <input class="contact-input" type="text" id="lastname" name="lastname" placeholder="Dupont" required="true">
                 <label for="email">Votre adresse e-mail</label>
-                <input class="contact-input" type="email" id="email" placeholder="Écrivez votre adresse mail ici" required="true">
-                <label for="tel">Votre numéro de téléphone</label>
-                <input class="contact-input" type="tel" id="tel" placeholder="Écrivez votre numéro ici" required="true">
+                <input class="contact-input" type="email" id="email" name="email" placeholder="marie.dupont@exemple.com" required="true">
+                <label for="phone">Votre numéro de téléphone</label>
+                <input class="contact-input" type="tel" id="phone" name="phone" placeholder="0612345678" required="true">
                 <label for="message">Votre message</label>
-                <textarea class="contact-input" id="message">Écrivez votre message ici</textarea>
+                <textarea class="contact-input" id="message" name="message">Écrivez votre message ici</textarea>
                 <input class="btn btn-form" type="submit" value="Envoyer le message">
             </form>
         </section>
