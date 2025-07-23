@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--SEO Tags-->
     <title>Développeur web à Nice - Nathan Bonin</title>
-    <meta name="description" content="Mon portfolio. Je créée et développe des solutions sur-mesure pour faire des internautes vos clients">
-    <meta name="robots" content="index, follow">
+    <meta name="description" content="Mon portfolio. Je créée et développe des solutions sur-mesure pour faire des internautes vos clients" />
+    <meta name="robots" content="index, follow" />
+    <!--OG Tags-->
+    <meta property="og:title" content="Nathan, développeur web à Nice" />
+    <meta property="og:image" content="./images/apercu-og.webp" />
+    <meta property="og:description" content="Je créée et développe des solutions sur-mesure pour faire des internautes vos clients" />
+    <meta property="og:site_name" content="Nathan Bonin" />
+    <meta property="og:type" content="website" />
     <!--Loading fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +23,12 @@
     <link href="./style/reset.css" rel="stylesheet" />
     <link href="./style/style.css" rel="stylesheet" />
     <link href="./style/header.css" rel="stylesheet" />
-    <link href="./style/index.css" rel="stylesheet" />
-    <link href="./style/footer.css" rel="stylesheet" />    
+    <link href="./style/main.css" rel="stylesheet" />
+    <link href="./style/footer.css" rel="stylesheet" />  
+    <!--Favicon-->  
+    <link rel="icon" type="image/svg+xml" href="./logo/favicon.svg">
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/47924965.js"></script>
 </head>
 <body>
     <header>
@@ -25,10 +36,10 @@
             <img class="menu-logo" alt="Logo de Nathan Bonin, développeur web à Nice" src="./logo/logo-color.svg">
             <nav>
                 <ul class="menu-nav">
-                    <li><a href="" class="menu-link">Services</a></li>
-                    <li><a href="" class="menu-link">Portfolio</a></li>
-                    <li><a href="" class="menu-link">À propos</a></li>
-                    <li><a href="" class="menu-contact">Contact</a></li>
+                    <li><a href="#services" class="menu-link">Services</a></li>
+                    <li><a href="#portfolio" class="menu-link">Portfolio</a></li>
+                    <li><a href="#about" class="menu-link">À propos</a></li>
+                    <li><a href="#contact" class="menu-contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,10 +53,10 @@
                 <p class="hero-commercial">Création de solutions digitales sur mesure pour transformer vos visiteurs en clients</p>
                 <p class="hero-commercial">Vous avez un projet digital ?</p>
                 <p class="hero-action">Discutons-en dès maintenant</p>
-                <a class="btn hero-btn contact-btn" href="" title="Contacter Nathan Bonin">Me contacter</a>
+                <a class="btn hero-btn contact-btn" href="#contact" title="Contacter Nathan Bonin">Me contacter</a>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <h2>Des expertises au service de votre performance digitale</h2>
             <div class="services-list">
                 <article class="card services-card">
@@ -68,7 +79,7 @@
                 </article>                
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h2>Derniers projets</h2>
             <div class="portfolio-list">
                 <article class="card portfolio-card">
@@ -83,7 +94,7 @@
                         <p>Projet réalisé dans le cadre de la création d’une nouvelle plateforme de réservation d’hébergements et d’activités.</p> 
                         <p>Développement d’un prototype de page d’accueil, conformément à une maquette  fournie par une agence de design.</p>
                         <p>Dans ce projet, les éléments sont intégrés en prenant en compte le responsive : les composants s’adaptent à la largeur de l’écran.</p>
-                        <a class="btn portfolio-card-btn" target="_blank" href="" title="Ouvrir le projet dans un nouvel onglet">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square new-tab"></i></a>
+                        <a class="btn portfolio-card-btn" target="_blank" href="https://n-bon.github.io/oc-booki-03-2025/" title="Ouvrir le projet dans un nouvel onglet">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square new-tab"></i></a>
                     </div>
                 </article>
                 <article class="card portfolio-card">
@@ -98,7 +109,7 @@
                         <p>Développement du frontend d’un portfolio interactif avec back-office sur mesure pour la gestion autonome des projets. </p>
                         <p>L’interface comprend un formulaire réservé aux collaborateurs de l’architecte leur permettant d’ajouter des projets en toute autonomie.</p>
                         <p>Ce projet a nécessité des connexions au backend du site via des API.</p>
-                        <a class="btn portfolio-card-btn" target="_blank" href="" title="Ouvrir le projet dans un nouvel onglet">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square new-tab"></i></a>
+                        <a class="btn portfolio-card-btn" target="_blank" href="https://github.com/n-bon/oc-sophie-bluel/tree/master/FrontEnd" title="Ouvrir le projet dans un nouvel onglet">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square new-tab"></i></a>
                     </div>
                 </article>
                 <article class="card portfolio-card">
@@ -112,12 +123,12 @@
                         </ul>
                         <p>Audit complet, optimisation technique (balises, performances, structure HTML),mise en conformité avec les normes WCAG (Recommandations d’accessibilité pour les contenus web) pour améliorer l’accessibilité et optimisations pour le référencement naturel (SEO). </p>
                         <p>Des mesures pour rendre le site plus respectueux de l’environnement ont été prises comme le formatage des images et la minification des fichiers.</p>
-                        <a class="btn portfolio-card-btn" target="_blank" href="" title="Ouvrir le projet dans un nouvel onglet">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square new-tab"></i></a>
+                        <a class="btn portfolio-card-btn" target="_blank" href="https://n-bon.github.io/oc-nina-carducci/" title="Ouvrir le projet dans un nouvel onglet">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square new-tab"></i></a>
                     </div>
                 </article>                                  
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <h2>Votre prestataire en développement web à Nice</h2>
             <div class="about-description">
                 <p>Ancien responsable web marketing, aujourd’hui développeur web à Nice, j’allie expertise technique et vision stratégique pour concevoir des solutions digitales centrées sur la performance.</p>
@@ -157,10 +168,10 @@
             </div>
             <div class="about-action">
                 <p>Pour en savoir plus sur mon parcours et suivre mes actualités professionnelles, abonnez-vous à mon profil Linkedin :</p>
-                <a class="btn btn-about" target="_blank" href="" title="Ouvrir le profil Linkedin de Nathan Bonin">Voir mon profil Linkedin <i class="fa-solid fa-arrow-up-right-from-square new-tab new-tab"></i></a>                 
+                <a class="btn btn-about" target="_blank" href="https://www.linkedin.com/in/nathan-bonin/" title="Ouvrir le profil Linkedin de Nathan Bonin">Voir mon profil Linkedin <i class="fa-solid fa-arrow-up-right-from-square new-tab new-tab"></i></a>                 
             </div>                    
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Contactez-moi</h2>
             <form method="post" id="contactForm" action="" class="card contact-card">
                 <label for="name">Votre nom</label>

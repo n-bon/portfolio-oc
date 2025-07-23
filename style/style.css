@@ -21,13 +21,12 @@
 /*** Default style ***/
 
 /***** General ******/
-* {
-    color: var(--dark);
-}
 
 body {
     font-family: "Montserrat", sans-serif;
     background-color: white;
     line-height: var(--medium);
+    color: var(--dark);
+
 }
 

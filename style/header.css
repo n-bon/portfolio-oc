@@ -31,7 +31,6 @@ header {
     border-radius: var(--regular);
     box-shadow: 4px 4px 4px grey;
     padding: var(--small) var(--regular);
-
 }
 
 .menu-link {
@@ -52,5 +51,26 @@ header {
 .menu-contact:hover {
     background-color: var(--contrast3);
     color: var(--dark);
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        flex-wrap: wrap;
+        gap: var(--smaller);
+    }
+    .menu-logo {
+        max-width: 100px;
+    }
+    
+    .menu-nav {
+        gap: var(--smaller);
+        flex-wrap: wrap;
+    }
+
+    .menu-nav a {
+        font-size: var(--smaller);
+        padding: var(--small) var(--small);
+    }
 }
 
