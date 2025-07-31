@@ -81,7 +81,7 @@ textarea {
     justify-items: space-around;
     justify-content: center;
     gap: var(--xlarge);
-    background: radial-gradient(closest-side, var(--contrast2), transparent);
+    background: radial-gradient(closest-side, var(--contrast3), transparent);
 }
 
 .hero-infos {
@@ -287,7 +287,7 @@ textarea {
 
 /* About */
 .about {
-    background: radial-gradient(closest-side, var(--contrast2), transparent);
+    background: radial-gradient(closest-side, var(--contrast3), transparent);
     margin-bottom: var(--xxxlarge);
 }
 
