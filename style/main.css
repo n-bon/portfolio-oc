@@ -3,6 +3,7 @@
 main {
     max-width: 1280px;
     margin: auto;
+    background-color: var(--white);
 }
 
 h2 {
@@ -247,7 +248,7 @@ textarea {
     font-weight: 600;
     font-size: small;
     background-color: var(--dark);
-    color: var(--bright);
+    color: var(--white);
     border-radius: var(--large) var(--regular) var(--regular) var(--large);
     padding: 0.25rem 0.5rem 0.25rem var(--regular);
 }
@@ -406,7 +407,7 @@ textarea {
     box-sizing: border-box;
     margin-bottom: var(--medium);
     width: 100%;
-    background: white;
+    background: var(--white);
     border-radius: var(--large);
     border: 1px solid var(--dark);
     padding: var(--small) var(--regular);
