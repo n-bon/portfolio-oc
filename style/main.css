@@ -43,7 +43,7 @@ textarea {
 
 .contact-btn {
     background-color: var(--contrast1);
-    color: var(--bright);
+    color: var(--white);
 }
 
 .contact-btn:hover {
