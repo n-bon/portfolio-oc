@@ -3,6 +3,7 @@
 main {
     max-width: 1280px;
     margin: auto;
+    background-color: var(--white);
 }
 
 h2 {
@@ -42,7 +43,7 @@ textarea {
 
 .contact-btn {
     background-color: var(--contrast1);
-    color: var(--bright);
+    color: var(--white);
 }
 
 .contact-btn:hover {
@@ -81,7 +82,7 @@ textarea {
     justify-items: space-around;
     justify-content: center;
     gap: var(--xlarge);
-    background: radial-gradient(closest-side, var(--contrast2), transparent);
+    background: radial-gradient(closest-side, var(--contrast3), transparent);
 }
 
 .hero-infos {
@@ -247,7 +248,7 @@ textarea {
     font-weight: 600;
     font-size: small;
     background-color: var(--dark);
-    color: var(--bright);
+    color: var(--white);
     border-radius: var(--large) var(--regular) var(--regular) var(--large);
     padding: 0.25rem 0.5rem 0.25rem var(--regular);
 }
@@ -287,7 +288,7 @@ textarea {
 
 /* About */
 .about {
-    background: radial-gradient(closest-side, var(--contrast2), transparent);
+    background: radial-gradient(closest-side, var(--contrast3), transparent);
     margin-bottom: var(--xxxlarge);
 }
 
@@ -406,7 +407,7 @@ textarea {
     box-sizing: border-box;
     margin-bottom: var(--medium);
     width: 100%;
-    background: white;
+    background: var(--white);
     border-radius: var(--large);
     border: 1px solid var(--dark);
     padding: var(--small) var(--regular);
